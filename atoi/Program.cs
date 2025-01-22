@@ -1,5 +1,6 @@
-﻿public class Solution {
-    public int MyAtoi(string s) {
+﻿using System.Numerics;
+
+    int MyAtoi(string s) {
         var sx = s.TrimStart();
 var digits = new List<char>();         
         foreach(char c in sx){
@@ -25,4 +26,3 @@ var digits = new List<char>();
             return Int32.MaxValue;        
         return (int)val;
     }
-}
